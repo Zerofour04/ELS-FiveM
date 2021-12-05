@@ -1,5 +1,8 @@
 # 🚨ELS-FiveM with WMServerSirens Integration
 
+## 🚨NonELS Version:
+[NonELS](https://github.com/Zerofour04/lux_vehcontrol)
+
 ## 📗Installation Guide
 1. Clone the repository or download the [latest version](../../releases/latest).
     * Note: if cloning, pass `[ELS]` or similar to `path` argument (e.g. `git clone https://github.com/MrDaGree/ELS-FiveM [ELS]`, make sure you are in `resources`, also).
