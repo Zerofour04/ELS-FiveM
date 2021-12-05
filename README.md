@@ -1,10 +1,6 @@
-### Master branch is now considered development work. Use the releases tab for stable builds.
-https://discord.gg/GUvNXNe
+# 🚨ELS-FiveM with WMServerSirens Integration
 
-#### Default Controls
-https://github.com/MrDaGree/ELS-FiveM/wiki/Controls
-
-#### Installation Guide
+## 📗Installation Guide
 1. Clone the repository or download the [latest version](../../releases/latest).
     * Note: if cloning, pass `[ELS]` or similar to `path` argument (e.g. `git clone https://github.com/MrDaGree/ELS-FiveM [ELS]`, make sure you are in `resources`, also).
 2. Place inside your server's `resources` directory.
@@ -13,7 +9,18 @@ https://github.com/MrDaGree/ELS-FiveM/wiki/Controls
 5. Place any VCF files inside the `vcf` directory so they are able to be found.
 6. Enjoy!
 
-#### Convars
+## 🧱Requirements
+- [WMServerSirens](https://github.com/Zerofour04/WMServerSirens)
+- ELS Cars with CARNAME.xml
+- [fxserver](https://docs.fivem.net/docs/server-manual/setting-up-a-server/)
+
+## 📞Support
+https://discord.gg/GUvNXNe
+
+## ⌨️Default Controls
+https://github.com/MrDaGree/ELS-FiveM/wiki/Controls
+
+## ⚙️Convars
 | Convar              | Parameters        | Function                                                                                                              | Example Usage                | Default State |
 |---------------------|-------------------|-----------------------------------------------------------------------------------------------------------------------|------------------------------|---------------|
 | `els_outputLoading` | boolean           | This outputs the loaded vehicles that have been specified in the vcf.lua                                              | `setr els_outputLoading true` | "false"      |
