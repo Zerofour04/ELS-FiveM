@@ -1,5 +1,7 @@
 els_Vehicles = {}
 
+RequestScriptAudioBank("DLC_WMSIRENS\\SIRENPACK_ONE", false)
+
 k = nil
 vehName = nil
 lightingStage = 0
@@ -64,10 +66,8 @@ Citizen.CreateThread(function()
             DisableControlAction(0, 83, true) -- INPUT_VEH_NEXT_RADIO_TRACK 
             DisableControlAction(0, 81, true) -- INPUT_VEH_NEXT_RADIO
             DisableControlAction(0, 82, true) -- INPUT_VEH_PREV_RADIO
-            DisableControlAction(0, 85, true) -- INPUT_VEH_PREV_RADIO
 
-            SetVehRadioStation(GetVehiclePedIsUsing(PlayerPedId()), "OFF")
-            SetVehicleRadioEnabled(GetVehiclePedIsUsing(PlayerPedId()), false)
+
 
             if(GetLastInputMethod(0)) then
                 DisableControlAction(0, keyboard.stageChange, true)

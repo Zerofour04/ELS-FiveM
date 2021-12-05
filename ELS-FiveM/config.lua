@@ -25,7 +25,7 @@ shared = {
 
 keyboard = {
     modifyKey = 132,
-    stageChange = 85, -- Q
+    stageChange = 85, -- E
     guiKey = 199, -- P
     takedown = 83, -- =
     siren = {

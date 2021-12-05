@@ -294,7 +294,7 @@ function setHornState(veh, newstate)
                         
             if newstate == 1 then
                 h_soundID_veh[veh] = GetSoundId()
-                PlaySoundFromEntity(h_soundID_veh[veh], getVehicleVCFInfo(veh).sounds.mainHorn.audioString, veh, 0, 0, 0)
+                PlaySoundFromEntity(h_soundID_veh[veh], "SIREN_DELTA", veh, "DLC_WMSIRENS_SOUNDSET", 0, 0, 0)
             end             
                 
             h_horn_state[veh] = newstate
@@ -315,19 +315,19 @@ function setSirenState(veh, newstate)
             if newstate == 1 then
 
                 m_soundID_veh[veh] = GetSoundId()
-                PlaySoundFromEntity(m_soundID_veh[veh], getVehicleVCFInfo(veh).sounds.srnTone1.audioString, veh, 0, 0, 0)
+                PlaySoundFromEntity(m_soundID_veh[veh], "SIREN_ALPHA", veh, "DLC_WMSIRENS_SOUNDSET", 0, 0)
                 toggleSirenMute(veh, true)
                 
             elseif newstate == 2 then
 
                 m_soundID_veh[veh] = GetSoundId() 
-                PlaySoundFromEntity(m_soundID_veh[veh], getVehicleVCFInfo(veh).sounds.srnTone2.audioString, veh, 0, 0, 0)
+                PlaySoundFromEntity(m_soundID_veh[veh], "SIREN_BRAVO", veh, "DLC_WMSIRENS_SOUNDSET", 0, 0)
                 toggleSirenMute(veh, true)
                 
             elseif newstate == 3 then
 
                 m_soundID_veh[veh] = GetSoundId()
-                PlaySoundFromEntity(m_soundID_veh[veh], getVehicleVCFInfo(veh).sounds.srnTone3.audioString, veh, 0, 0, 0)
+                PlaySoundFromEntity(m_soundID_veh[veh], "SIREN_CHARLIE", veh, "DLC_WMSIRENS_SOUNDSET", 0, 0)
                 toggleSirenMute(veh, true)
                 
             else
